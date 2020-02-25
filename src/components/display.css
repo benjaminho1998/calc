@@ -1,0 +1,12 @@
+.screen {
+    height: 2em;
+    width: 11.4em;
+    border: 1px solid black;
+    margin-bottom: 0.3em;
+}
+
+.button {
+    height: 3em;
+    width: 4em;
+    margin: 1px;
+}
