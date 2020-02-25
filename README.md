@@ -1,5 +1,5 @@
 ## Simple Calculator
-Build a simple calculator for practice.
+Built a simple calculator for practice.
 
 ### Technologies
 * React.js
