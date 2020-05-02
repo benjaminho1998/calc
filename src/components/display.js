@@ -6,10 +6,11 @@ class Display extends React.Component {
         super(props);
 
         this.state = {
-            screen: ''
+            screen: '' //This state variable will contain what is being inputted/outputted on the calculator
         }
     };
 
+    //Handle click function takes care of user input
     handleClick = (e) => {
         var name = e.target.value;
         if(name === 'AC') {
@@ -18,7 +19,7 @@ class Display extends React.Component {
             });
         } else if(name === '=') {
             try {
-                var answer = (eval(this.state.screen) || '') + '';
+                var answer = (eval(this.state.screen) || '') + ''; //Eval isn't the most secure, but fits well in a calculator app
                 this.setState({
                     screen: answer
                 });
