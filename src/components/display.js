@@ -45,10 +45,8 @@ class Display extends React.Component {
                         <button className = 'button' value = {symbol} onClick = {(e) => this.handleClick(e)}>
                             {symbol}
                         </button>
-                        {symbol === 'AC' || symbol === '/' || symbol === '*' || symbol === '-' ? (
+                        {(symbol === 'AC' || symbol === '/' || symbol === '*' || symbol === '-') && 
                             <br></br>
-                        ) : 
-                            null
                         }
                     </span>
                 ))}
